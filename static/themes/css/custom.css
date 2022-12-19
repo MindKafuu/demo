@@ -1,0 +1,210 @@
+:root {
+    --main-color: #87c746;
+    --main-onclick: #81be43;
+}
+
+.centered {
+    text-align: center !important;
+}
+
+/** Container **/
+div .container-fluid {
+    padding-top: 30px;
+}
+
+/**************************  Login **********************/
+/** ibank logo **/
+.db img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+/** Submit Button **/
+.btn-info {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+a.btn-info:focus,
+a.btn-info:hover,
+button.btn-info:focus,
+button.btn-info:hover {
+    background-color: var(--main-onclick);
+}
+
+/** input onClick **/
+.form-material .form-control,
+.form-material .form-control.focus,
+.form-material .form-control:focus {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-color)), to(var(--main-color))), -webkit-gradient(linear, left top, left bottom, from(#e9ecef), to(#e9ecef));
+    background-image: -webkit-linear-gradient(to right, var(--main-color), var(--main-color)), -webkit-linear-gradient(#e9ecef, #e9ecef);
+    background-image: -o-linear-gradient(to right, var(--main-color), var(--main-color)), -o-linear-gradient(#e9ecef, #e9ecef);
+    background-image: linear-gradient(to right, var(--main-color), var(--main-color)), linear-gradient(#e9ecef, #e9ecef);
+}
+
+/************************** Header **************************/
+
+/** Header LeftSidebar Color **/
+.topbar .top-navbar .navbar-header {
+    /*background: #81be43;*/
+    background: var(--main-onclick);
+    line-height: 65px;
+    min-width: 70px;
+}
+
+/** Header Color **/
+.skin-default .topbar,
+.skin-blue .topbar {
+    background: var(--main-color);
+}
+
+/** ibank logo **/
+.navbar-brand img {
+    width: 75px;
+    height: 75px;
+}
+.navbar-brand label {
+    color: #206521;
+}
+
+/** icon menu hidden **/
+.navbar-collapse a:focus,
+.navbar-collapse a {
+    color: #ffffff !important;
+}
+.navbar-collapse a:hover {
+    color: #dfdfdf !important;
+}
+
+/** user profile **/
+.nav-item img {
+    width: 40px;
+    height: 40px;
+}
+
+a.dropdown-item {
+    color: #444444 !important;
+}
+a.dropdown-item:focus,
+a.dropdown-item:hover {
+    color: #7f7f7f !important;
+}
+.nav-link span {
+    font-size: 13px;
+}
+
+/************************** MainMenu **************************/
+
+/** text and icons **/
+a {
+    color: #444444 !important;
+}
+a:focus,
+a:hover {
+    color: var(--main-onclick) !important;
+}
+
+/** image circle **/
+.img-circle {
+    width:150px;
+    height:150px;
+    border-radius:100%;
+    margin: 10px;
+}
+
+/************************** Sidebar **************************/
+
+/** text and icons **/
+.sidebar-nav ul li a.active i ,
+.sidebar-nav ul li a:hover i {
+    color: var(--main-onclick);
+}
+
+/************************** Table **************************/
+/*table {*/
+    /*table-layout: fixed;*/
+    /*word-wrap: break-word;*/
+/*}*/
+/*table th,*/
+/*table td {*/
+    /*overflow: hidden;*/
+/*}*/
+
+/************************** Select2 **************************/
+.select2-container {
+    display: block !important;
+    min-width: auto !important;
+    width: auto !important;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/************************** legend **************************/
+legend {
+    margin-bottom: 0rem;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 0.3rem;
+}
+
+/************************** paginated **************************/
+.pager {
+    display: block;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.pager .page a {
+    border: 6px solid #bbbbbb;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: #000000;
+}
+.pager .active {
+    border: 6px solid #444444;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.pagination li a {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: var(--main-color);
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.pagination li.active a {
+  z-index: 2;
+  color: #fff;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.pagination li.disabled a {
+  color: #636c72;
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.pagination li:first-child a {
+  margin-left: 0;
+  border-bottom-left-radius: .25rem;
+  border-top-left-radius: .25rem;
+}
+.pagination {
+  justify-content: center;
+}
