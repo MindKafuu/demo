@@ -1,0 +1,19 @@
+{% load static i18n%}
+{% load crispy_forms_tags %}
+
+{% block mainjs %}{% include 'lib/_scripts.html' %}{% endblock %}
+
+{% block content %}
+<div class="row justify-content-md-center">
+  <div class="col-sm-12">
+    <form id="id_form-{{ form.prefix }}" class="form-horizontal form-material" onsubmit="return validateForm()" method="post" enctype='multipart/form-data' autocomplete="off">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Select The Menu</h4>
+            {% crispy form %}
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

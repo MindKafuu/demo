@@ -1,0 +1,8 @@
+Django
+django-autocomplete-light
+django-crispy-forms
+django-extra-views
+django-filter
+django-session-security
+django-tables2
+mysqlclient
